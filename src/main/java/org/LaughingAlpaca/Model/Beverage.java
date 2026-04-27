@@ -59,10 +59,10 @@ public abstract class Beverage {
     @Override
     public String toString() {
         return String.format(
-                "%s %s %s [Milk: %s, Sweetener: %s]",
+                "%s: \t [Size: %s, Temperature: %s, Milk: %s, Sweetener: %s]",
+                this.getClass().getSimpleName(),
                 formatValue(size),
                 formatValue(temperature),
-                this.getClass().getSimpleName(),
                 formatValue(milk),
                 formatValue(sweetener)
         );
